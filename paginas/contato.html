@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato — Cosmos</title>
+
+    <link rel="icon" href="../icone/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<span id="topo"></span>
+
+<header>
+    <nav>
+        <a href="../index.html" class="nav-logo">✦ Cosmos</a>
+        <ul class="nav-links">
+            <li><a href="../index.html">Início</a></li>
+            <li><a href="galeria.html">Galeria & Mídia</a></li>
+            <li><a href="dados.html">Dados & Tabelas</a></li>
+            <li><a href="contato.html" class="ativo">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <div class="container">
+
+        <section style="padding-top:4rem; text-align:center;">
+            <h1>Contato</h1>
+            <h2>Pesquisa de Interesse Astronômico</h2>
+        </section>
+
+        <section class="secao-sobre">
+            <p style="text-align:center; max-width:700px; margin:0 auto 2rem;">
+                Preencha o formulário abaixo para nos contar sobre seus interesses no cosmos.
+                Todos os campos marcados com <strong>*</strong> são obrigatórios.
+            </p>
+
+            <div class="form-container">
+                <form>
+
+                    <fieldset>
+                        <legend>★ Identificação</legend>
+
+                        <div class="form-group">
+                            <label for="nome">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome completo" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="idade">Idade</label>
+                            <input type="number" id="idade" name="idade" placeholder="Sua idade">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pais">País de Origem *</label>
+                            <select id="pais" name="pais" required>
+                                <option value="">Selecione seu país</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="portugal">Portugal</option>
+                                <option value="eua">Estados Unidos</option>
+                                <option value="outro">Outro</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>🌌 Área de Interesse</legend>
+
+                        <div class="form-group">
+                            <label>Qual área do cosmos mais te fascina? *</label>
+
+                            <div class="radio-group">
+                                <label><input type="radio" name="interesse" required> Galáxias</label>
+                                <label><input type="radio" name="interesse"> Estrelas & Nebulosas</label>
+                                <label><input type="radio" name="interesse"> Planetas & Exoplanetas</label>
+                                <label><input type="radio" name="interesse"> Buracos Negros</label>
+                                <label><input type="radio" name="interesse"> Cosmologia & Origem do Universo</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Quais telescópios/missões você acompanha?</label>
+
+                            <div class="checkbox-group">
+                                <label><input type="checkbox"> Hubble</label>
+                                <label><input type="checkbox"> James Webb</label>
+                                <label><input type="checkbox"> Chandra</label>
+                                <label><input type="checkbox"> Perseverance</label>
+                                <label><input type="checkbox"> Artemis</label>
+                                <label><input type="checkbox"> Voyager</label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="nivel">Nível de Conhecimento em Astronomia</label>
+                            <select id="nivel" name="nivel">
+                                <option>Iniciante — Tenho curiosidade geral</option>
+                                <option>Intermediário — Já estudo o tema</option>
+                                <option>Avançado — Tenho conhecimento técnico</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>✉ Mensagem & Preferências</legend>
+
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem, dúvida ou comentário sobre o cosmos..."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="frequencia">Frequência de contato</label>
+                            <select id="frequencia" name="frequencia">
+                                <option>Semanal</option>
+                                <option>Mensal</option>
+                                <option>Apenas novidades importantes</option>
+                            </select>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-acoes">
+                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                </form>
+            </div>
+        </section>
+
+        <section class="secao-links" style="text-align:center;">
+            <h2>Continue Explorando</h2>
+
+            <div class="links-nav">
+                <a href="../index.html" class="btn">← Início</a>
+                <a href="galeria.html" class="btn btn-secundario">🖼 Galeria</a>
+                <a href="dados.html" class="btn">📊 Dados</a>
+                <a href="#topo" class="btn btn-secundario">↑ Topo</a>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-links">
+            <a href="../index.html">Início</a>
+            <a href="galeria.html">Galeria</a>
+            <a href="dados.html">Dados</a>
+            <a href="contato.html">Contato</a>
+        </div>
+
+        <p>✦ Projeto de Interface — Astronomia & Cosmos ✦</p>
+    </div>
+</footer>
+
+</body>
+</html>
